@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import styles from "./Ussd.module.css";
 
+/*Defines the structure of the content displayed on the screen*/
 interface ScreenContent {
   title: string;
   options: { number: string; text: string }[];
 }
-
+/*defines the structure of the screen state variable, which holds the current content being displayed on the USSD screen.*/
 interface ScreenType {
   content: ScreenContent;
 }
-
+/*defines a functional component*/
 const Ussd: React.FC = () => {
   const [screen, setScreen] = useState<ScreenType>(() => {
     const savedScreen = localStorage.getItem("screen");
@@ -25,9 +26,10 @@ const Ussd: React.FC = () => {
           },
         };
   });
-
+/*state management for user input*/
   const [input, setInput] = useState<string>("");
 
+/*function that handles conditional rendering and */
   const handleUssd = () => {
     const numInput = parseInt(input, 10);
 
@@ -83,7 +85,7 @@ const Ussd: React.FC = () => {
       ))}
     </div>
   );
-
+/*handles and tracks the changes in the state*/
   return (
     <div className={styles.container}>
       <div className={styles.phonescreen}>

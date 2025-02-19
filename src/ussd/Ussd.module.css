@@ -13,7 +13,7 @@ body{
     background: linear-gradient(to right, rgba(193, 137, 137, 0.642),white,rgb(99, 95, 95));
     
 }
-
+/*styling for the simulators's container*/
 .container{
   display: flex; 
   flex-direction: column;
@@ -25,6 +25,7 @@ body{
  
 
 }
+/*styling for the phone screen*/
 .phonescreen {
   flex: 1;
   background-color:  rgb(220, 99, 99);
@@ -32,7 +33,7 @@ body{
   border-top-right-radius: 10px;
   padding: 20px;
 }
-
+/* styling for the screen itself*/
 .screen{
     background-color: white;
     height: 100%; 
@@ -43,30 +44,34 @@ body{
   border-radius: 5px;
    
 }
+/* styling for input area*/
 input{
     background-color: rgb(223, 136, 136);
     color: black;
     height: 30px;
     padding: 20px;
 }
+/*styling for input placeholder*/
 ::placeholder{
     font-size: 15px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+/*styling for the button*/
 button{
     background-color: rgba(0,0,0.75);
     padding: 16px;
     font-family: fantasy;
     color: whitesmoke;
 }
-
+/*styling for the span:title*/
 .title{
     color: rgb(197, 53, 197);
 }
+/*styling for the span:number*/
 .number{
     color: brown;
 }
-
+/*styling for the paragraph*/
 p{
     font-size: 18px;
 }
@@ -86,31 +91,4 @@ p{
     font-size: 12px;
   }
 }
-/* resposniveness for extra small screens */
-@media (max-width: 400px) { 
-  body {
-    font-size: 12px; 
-  }
-  .container {
-    height: 350px;
-    width: 250px; 
-    margin-top: 40%;
-  }
-  p{
-    font-size: 12px;
-  }
-}
-/* resposniveness for extra small screens */
-@media (max-width: 400px) { 
-  body {
-    font-size: 12px; 
-  }
-  .container {
-    height: 350px;
-    width: 250px; 
-    margin-top: 40%;
-  }
-  p{
-    font-size: 12px;
-  }
-}
+
