@@ -6,7 +6,7 @@ This project simulates a USSD (Unstructured Supplementary Service Data) interfac
 
 My approach to building this USSD simulator involved the following key steps:
 
-1.  **Component-Based Architecture (React):** I utilized React's component to structure the simulator's UI. This allowed for modularity and reusability of UI elements, making the code more organized and maintainable.  I created a component for the USSD Simulator which has the [ the screen display, the input field and button ].
+1.  **Component-Based Architecture (React):** I utilized React's component to structure the simulator's UI. This allowed for modularity and reusability of UI elements, making the code more organized and maintainable. A component was created for the USSD Simulator which has the [ the screen display, the input field and button ].
 
 2.  **TypeScript for Type Safety:** I incorporated TypeScript to add typing to the project. This ensures type safety and readability. I defined interfaces to define the structure of the data used for displaying the USSD menus.The `ScreenContent` interface defines the structure of the content displayed on a single USSD screen and the `ScreenType` interface defines the structure of the `screen` state variable, which holds the current content being displayed on the USSD screen.
 
@@ -15,7 +15,7 @@ My approach to building this USSD simulator involved the following key steps:
 4.  **Menu Structure Design/Input Handling:** The USSD menu structure is defined implicitly within the React component's JSX and the `handleUssd` function.  The initial menu is rendered directly in the component's JSX.  Subsequent menus are created dynamically within the `handleUssd` function's `switch` statement. Each `case` in the `switch` statement displays a different menu screen.  The content of each menu screen (using JSX) is then set as the `screen` state, which triggers the component to display the appropriate content or response. 
 
 
-5.**Styling:** I used CSS Modules (`Ussd.module.css`) to style the simulator interface, giving it a look and feel similar to a real USSD menu on a mobile phone. I also made it responsive on all devices.
+5.  **Styling:** I used CSS Modules (`Ussd.module.css`) to style the simulator interface, giving it a look and feel similar to a real USSD menu on a mobile phone. I also made it responsive on all devices.
 
 
 6.  **Vite for Fast Development:** I used Vite as the build tool for this project, which enabled fast development and hot reloading.
@@ -25,17 +25,18 @@ My approach to building this USSD simulator involved the following key steps:
 
 2.  **Installation:**
  In your Terminal:
-    git clone [https://github.com/your-username/ussd-simulator.git]
-    https://github.com/Nanakhodes/ussd-simulator.git
-    cd ussd-simulator
-    npm install 
-    
+```bash
+    git clone `https://github.com/Nanakhodes/ussd-simulator.git`
+    cd `ussd-simulator`
+    npm install
+```
 
 3.  **Running the Simulator:**
-
+```bash
     npm run dev
+ ```
     
-
+   
     This will start the development server. The simulator will be accessible at [`http://localhost:5176`].
 
 4.  **Interacting with the Simulator:**
