@@ -34,7 +34,7 @@ My approach to building this USSD simulator involved the following key steps:
 3.  **Running the Simulator:**
 ```bash
     npm run dev
- ```
+```
     
    
     This will start the development server. The simulator will be accessible at [`http://localhost:5176`].
