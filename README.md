@@ -8,7 +8,7 @@ My approach to building this USSD simulator involved the following key steps:
 
 1.  **Component-Based Architecture (React):** I utilized React's component to structure the simulator's UI. This allowed for modularity and reusability of UI elements, making the code more organized and maintainable.  I created a component for the USSD Simulator which has the [ the screen display, the input field and button ].
 
-2.  **TypeScript for Type Safety:** I incorporated TypeScript to add typing to the project. This helped catch potential errors early during development and improved code maintainability and readability. I defined interfaces for [].
+2.  **TypeScript for Type Safety:** I incorporated TypeScript to add typing to the project. This ensures type safety and readability. I defined interfaces to define the structure of the data used for displaying the USSD menus.The `ScreenContent` interface defines the structure of the content displayed on a single USSD screen and the `ScreenType` interface defines the structure of the `screen` state variable, which holds the current content being displayed on the USSD screen.
 
 3.  **State Management (React):** I managed the state of the USSD simulator using [ `useState` and `useEffect` hooks].  This allowed me to efficiently update the UI based on user input and user screen.
 
