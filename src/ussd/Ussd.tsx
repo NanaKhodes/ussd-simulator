@@ -50,9 +50,18 @@ const handleUssd =  () => {
     case "0":
        setScreen(
          <div>
-           <p>Welcome <span>to</span> USSD Simulator</p>
-           <p><span className={styles.no}>1.</span> Check Balance</p>
-           <p><span className={styles.no}>2.</span> Exit</p>
+           <p>
+             Welcome <span className={styles.title}>to</span> USSD Simulator
+           </p>
+           <br />
+           <p>
+             <span className={styles.number}>1.</span>
+             <span className={styles.title}>Check</span> Balance
+           </p>
+           <br />
+           <p>
+             <span className={styles.number}>2.</span> <span className={styles.title}>Exit</span>
+           </p>
          </div>
        ); 
       break;
