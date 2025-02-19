@@ -1,32 +1,27 @@
 import React, { useState } from 'react'
 import styles from "./Ussd.module.css";
 
+interface ScreenContent {
+  title: string;
+  options: { number: string; text: string }[];
+}
 interface ScreenType {
-  children: React.ReactNode;
+  content: ScreenContent;
 }
 
 const Ussd: React.FC = () => {
 const [screen, setScreen] = useState<ScreenType>(() => {
-  const savedScreen = localStorage.getItem("screen");
-  return savedScreen ? (
-    JSON.parse(savedScreen)
-  ) : (
-    <div>
-      <h4>
-        Welcome <span className={styles.title}>to</span> USSD Simulator
-      </h4>
-      <br />
-      <p>
-        <span className={styles.number}>1.</span>
-        <span className={styles.title}>Check</span> Balance
-      </p>
-      <br />
-      <p>
-        <span className={styles.number}>2.</span> <span className={styles.title}>Exit</span>
-      </p>
-    </div>
-  );
-});
+    const savedScreen = localStorage.getItem("screen");
+    return savedScreen ? JSON.parse(savedScreen) : {
+      content: {
+        title: "Welcome to USSD Simulator",
+        options: [
+          { number: "1", text: "Check Balance" },
+          { number: "2", text: "Exit" },
+        ],
+      },
+    };
+  });
 const [input, setInput] = useState<string>("");
 
 const handleUssd =  () => {

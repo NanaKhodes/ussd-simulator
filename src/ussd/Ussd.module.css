@@ -10,7 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 50px; 
-    background: linear-gradient(to right, rgba(255, 0, 0, 0.642),white,black);
+    background: linear-gradient(to right, rgba(193, 137, 137, 0.642),white,rgb(99, 95, 95));
     
 }
 
@@ -76,10 +76,13 @@ p{
 @media (max-width: 400px) { 
   body {
     font-size: 12px; 
-    margin-top: 10px;
   }
   .container {
     height: 350px;
-    width: 200px; 
+    width: 250px; 
+    margin-top: 40%;
+  }
+  p{
+    font-size: 12px;
   }
 }
