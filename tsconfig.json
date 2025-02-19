@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es5", // Or a higher target if your environment supports it
+    "module": "esnext",
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "allowJs": true // Allow JavaScript files to coexist
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

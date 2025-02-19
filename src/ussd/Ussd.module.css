@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px; 
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.642),white,black);
+    
+}
+
+.container{
+  display: flex; 
+  flex-direction: column;
+  height: 500px; 
+  width: 300px; 
+  background-color: #61ade0; 
+  border-radius: 10px;
+  box-shadow: 26px -5px 26px -4px rgba(208,219,217,1);
+ 
+
+}
+.phonescreen {
+  flex: 1;
+  background-color:  rgb(220, 99, 99);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 20px;
+}
+
+.screen{
+    background-color: white;
+    height: 100%; 
+   display: flex;
+   flex-direction: column;
+  justify-content: flex-start; 
+  padding: 10px;
+  border-radius: 5px;
+   
+}
+input{
+    background-color: rgb(223, 136, 136);
+    color: black;
+    height: 30px;
+    padding: 20px;
+}
+::placeholder{
+    font-size: 15px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+button{
+    background-color: rgba(0,0,0.75);
+    padding: 16px;
+    font-family: fantasy;
+    color: whitesmoke;
+}
+
+.title{
+    color: rgb(197, 53, 197);
+}
+.number{
+    color: brown;
+}
+
+p{
+    font-size: 18px;
+}
+
+
+ /* resposniveness for extra small screens */
+@media (max-width: 400px) { 
+  body {
+    font-size: 12px; 
+    margin-top: 10px;
+  }
+  .container {
+    height: 350px;
+    width: 200px; 
+  }
+}
